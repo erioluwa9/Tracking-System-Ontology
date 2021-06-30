@@ -1,0 +1,283 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#"
+     xml:base="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:University="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#"
+     xmlns:university-Ontology="http://www.semanticweb.org/adeola/ontologies/2021/4/university-Ontology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#studies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#studies">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Module"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#teaches">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Module"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adeola/ontologies/2021/4/university-Ontology#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adeola/ontologies/2021/4/university-Ontology#teaches"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#first_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#first_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#last_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#last_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#staffID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#staffID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#studentHeigth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#studentHeigth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#studentID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#studentID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#CSModule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#CSModule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Module"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Lecturer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Lecturer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#MathModule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#MathModule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Module"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Module -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Module"/>
+    
+
+
+    <!-- http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#CS101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#CS101">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#CSModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#CS103 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#CS103">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#CSModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Lecturer1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Lecturer1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Lecturer"/>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prof Will</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Whittow</last_name>
+        <staffID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">417686</staffID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Lecturer2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Lecturer2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Lecturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Lecturer3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Lecturer3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Lecturer"/>
+        <university-Ontology:teaches rdf:resource="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#CS103"/>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kelvin</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jones</last_name>
+        <staffID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">563224</staffID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#M201 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#M201">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#MathModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#M204 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#M204">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#MathModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Student1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Student1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Student"/>
+        <studies rdf:resource="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#CS101"/>
+        <studies rdf:resource="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#M201"/>
+        <studies rdf:resource="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#M204"/>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Erioluwa</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adeola</last_name>
+        <studentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">130502</studentID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Student2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Student2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Student"/>
+        <studies rdf:resource="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#M204"/>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Samuel</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hawkins</last_name>
+        <studentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">867334</studentID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#CSModule"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Lecturer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#MathModule"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adeola/ontologies/2021/4/University.owl#Student"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
